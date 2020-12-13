@@ -1,4 +1,4 @@
-package com.example.customview.avatar
+package com.example.customview.view
 
 import android.content.Context
 import android.graphics.*
@@ -8,8 +8,6 @@ import android.view.View
 import androidx.annotation.RequiresApi
 import com.example.customview.R
 import com.example.customview.utils.dp
-import java.nio.file.attribute.AttributeView
-import java.util.jar.Attributes
 
 
 val IMAGE_WIDTH=200f.dp
