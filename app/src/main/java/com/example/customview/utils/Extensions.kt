@@ -9,3 +9,6 @@ get() = TypedValue.applyDimension(
     this,
     Resources.getSystem().displayMetrics
 )
+
+val Int.dp
+get() = this.toFloat().dp
