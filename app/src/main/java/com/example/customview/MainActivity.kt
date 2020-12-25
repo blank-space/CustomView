@@ -9,8 +9,7 @@ import com.example.customview.view.MaterialEditTextView
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-       val  mat= findViewById<MaterialEditTextView>(R.id.emt)
+        setContentView(R.layout.activity_circleview)
 
     }
 }
