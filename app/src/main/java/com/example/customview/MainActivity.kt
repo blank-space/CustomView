@@ -9,7 +9,7 @@ import com.example.customview.view.MaterialEditTextView
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_circleview)
+        setContentView(R.layout.activity_taglayout)
 
     }
 }
