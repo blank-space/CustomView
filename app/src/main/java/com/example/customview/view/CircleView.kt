@@ -25,11 +25,13 @@ class CircleView(context: Context?, attrs: AttributeSet?) : View(context, attrs)
     private val SIZE = (PADDING + RADIO) * 2
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
         color = Color.BLACK
+
     }
 
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
+
         /* resolveSize == 以下模版代码
         val w = when (MeasureSpec.getMode(widthMeasureSpec)) {
             MeasureSpec.EXACTLY -> MeasureSpec.getSize(widthMeasureSpec)
