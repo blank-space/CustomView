@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
 
-    <com.example.customview.view.MultiTouchView3
+    <com.example.customview.view.MultiTouchView2
         android:id="@+id/emt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

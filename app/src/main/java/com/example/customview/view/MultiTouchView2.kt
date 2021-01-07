@@ -61,10 +61,12 @@ class MultiTouchView2(context: Context?, attrs: AttributeSet?) : View(context, a
                 initOffsetX = offsetX
                 initOffsetY = offsetY
             }
-
             MotionEvent.ACTION_MOVE -> {
-                offsetX = focusX - downX + initOffsetX
-                offsetY = focusY - downY + initOffsetY
+                //限制滑动范围
+                offsetX = (focusX - downX + initOffsetX).coerceAtLeast(0f)
+                    .coerceAtMost(width.toFloat() - bitmap.width)
+                offsetY = (focusY - downY + initOffsetY).coerceAtLeast(0f)
+                    .coerceAtMost(height.toFloat() - bitmap.height)
                 invalidate()
             }
         }
